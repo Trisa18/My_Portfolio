@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trisa Das - AI/ML Student Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/three-animations.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div id="particles-js"></div>
+        <div id="hero-canvas"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1><span class="normal-text">Hello, I am </span><span class="glitch" data-text="Trisa Das">Trisa Das</span></h1>
+                <p class="typewriter">AI/ML Engineering Student | Tech Enthusiast</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">View Projects</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div id="about-particles" class="section-particles"></div>
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-left">
+                <div class="about-text">
+                    <p>Hello! I am Trisa Das, a passionate second-year Computer Science Engineering student specializing in Artificial Intelligence and Machine Learning at Vidyavardhaka College of Engineering (VVCE). I'm deeply fascinated by the potential of AI/ML to solve real-world problems and am constantly exploring new technologies in this field.</p>
+                    <p>Currently in my 4th semester, I'm focusing on building a strong foundation in both theoretical concepts and practical applications of AI/ML while actively seeking opportunities to apply my knowledge through projects and collaborations.</p>
+                </div>
+                <div class="education-timeline">
+                    <div class="timeline-item">
+                        <h3>B.E. in Computer Science (AI/ML)</h3>
+                        <div class="institution">Vidyavardhaka College of Engineering, Mysuru</div>
+                        <div class="period">2023 - 2027</div>
+                        <p>Specializing in Artificial Intelligence and Machine Learning</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-right">
+                <div class="about-robot">
+                    <img src="images/robot.avif" alt="AI Robot" />
+                </div>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-code"></i>
+                        <h3>AI/ML Focus</h3>
+                        <p>Specializing in artificial intelligence and machine learning technologies with hands-on experience in Python, TensorFlow, and PyTorch.</p>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3>Academic Excellence</h3>
+                        <p>4th semester Computer Science student at VVCE, maintaining strong academic performance while pursuing practical projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div id="skills-particles" class="section-particles"></div>
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-grid">
+                <!-- Technical Skills -->
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="images/html.jpg" alt="HTML" class="skill-icon">
+                            <p class="skill-name">HTML</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/css.png" alt="CSS" class="skill-icon">
+                            <p class="skill-name">CSS</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/js.png" alt="JavaScript" class="skill-icon">
+                            <p class="skill-name">JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/flask.png" alt="Flask" class="skill-icon">
+                            <p class="skill-name">Flask</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/git.png" alt="Git" class="skill-icon">
+                            <p class="skill-name">Git</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <img src="images/team collaboration.webp" alt="Team Collaboration" class="skill-icon">
+                            <p class="skill-name">Team Collaboration</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/project management.png" alt="Project Management" class="skill-icon">
+                            <p class="skill-name">Project Management</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/communication.jpg" alt="Communication" class="skill-icon">
+                            <p class="skill-name">Communication</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="images/problem solving skill.jpg" alt="Problem Solving" class="skill-icon">
+                            <p class="skill-name">Problem Solving</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div id="projects-particles" class="section-particles"></div>
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Weather API Application</h3>
+                    <p>A dynamic weather application that provides real-time weather information using API integration. Users can search for weather conditions in any location.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Weather API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>E-Learning Platform</h3>
+                    <p>A comprehensive e-learning platform that enables students to access educational content, take courses, and track their progress. Features include course management and user authentication.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Interview Bot</h3>
+                    <p>An AI-powered interview preparation platform that simulates real interview scenarios. Features include voice recognition, real-time feedback, and personalized question generation based on the job role.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">NLP</span>
+                        <span class="tech-tag">Speech Recognition</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Chat Application</h3>
+                    <p>A real-time chat application enabling users to communicate instantly. Features include private messaging, group chats, and message history.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>AI Portfolio & Resume Generator</h3>
+                    <p>An intelligent web application that automatically generates personalized portfolios and resumes using AI. Features include dynamic template customization, content optimization, and ATS-friendly format generation based on job descriptions.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Flask</span>
+                        <span class="tech-tag">Gemini API</span>
+                        <span class="tech-tag">Html</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">View Project</a>
+                        <a href="#" class="project-link">Source Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div id="contact-particles" class="section-particles"></div>
+        <h2>Contact Me</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-card">
+                    <div class="contact-icon-wrapper">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email</h3>
+                    <p>vvce23cseaiml0037@vvce.ac.in</p>
+                    <a href="mailto:vvce23cseaiml0037@vvce.ac.in" class="contact-button">
+                        Send Email <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon-wrapper">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Location</h3>
+                    <p>Mysuru, Karnataka</p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <a href="https://github.com/Trisa18" class="social-link" title="GitHub" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/trisa-das-ai-engineer" class="social-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Trisa Das. All rights reserved.</p>
+    </footer>
+</body>
+</html>
